@@ -10,3 +10,15 @@ E:\DATN\DATN_BE\BackEnd\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.csproj.Co
 E:\DATN\DATN_BE\BackEnd\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.csproj.CopyComplete
 E:\DATN\DATN_BE\BackEnd\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.dll
 E:\DATN\DATN_BE\BackEnd\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.pdb
+E:\DATN\DATN.DAL\bin\Debug\netcoreapp3.1\DATN.DAL.deps.json
+E:\DATN\DATN.DAL\bin\Debug\netcoreapp3.1\DATN.DAL.dll
+E:\DATN\DATN.DAL\bin\Debug\netcoreapp3.1\DATN.DAL.pdb
+E:\DATN\DATN.DAL\bin\Debug\netcoreapp3.1\DATN.Infrastructure.dll
+E:\DATN\DATN.DAL\bin\Debug\netcoreapp3.1\DATN.Infrastructure.pdb
+E:\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.csprojAssemblyReference.cache
+E:\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.AssemblyInfoInputs.cache
+E:\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.AssemblyInfo.cs
+E:\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.csproj.CoreCompileInputs.cache
+E:\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.csproj.CopyComplete
+E:\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.dll
+E:\DATN\DATN.DAL\obj\Debug\netcoreapp3.1\DATN.DAL.pdb

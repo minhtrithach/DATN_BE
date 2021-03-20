@@ -7,3 +7,12 @@ E:\DATN\DATN_BE\BackEnd\DATN\DATN.Infrastructure\obj\Debug\netcoreapp3.1\DATN.In
 E:\DATN\DATN_BE\BackEnd\DATN\DATN.Infrastructure\obj\Debug\netcoreapp3.1\DATN.Infrastructure.csproj.CoreCompileInputs.cache
 E:\DATN\DATN_BE\BackEnd\DATN\DATN.Infrastructure\obj\Debug\netcoreapp3.1\DATN.Infrastructure.dll
 E:\DATN\DATN_BE\BackEnd\DATN\DATN.Infrastructure\obj\Debug\netcoreapp3.1\DATN.Infrastructure.pdb
+E:\DATN\DATN.Infrastructure\bin\Debug\netcoreapp3.1\DATN.Infrastructure.deps.json
+E:\DATN\DATN.Infrastructure\bin\Debug\netcoreapp3.1\DATN.Infrastructure.dll
+E:\DATN\DATN.Infrastructure\bin\Debug\netcoreapp3.1\DATN.Infrastructure.pdb
+E:\DATN\DATN.Infrastructure\obj\Debug\netcoreapp3.1\DATN.Infrastructure.csprojAssemblyReference.cache
+E:\DATN\DATN.Infrastructure\obj\Debug\netcoreapp3.1\DATN.Infrastructure.AssemblyInfoInputs.cache
+E:\DATN\DATN.Infrastructure\obj\Debug\netcoreapp3.1\DATN.Infrastructure.AssemblyInfo.cs
+E:\DATN\DATN.Infrastructure\obj\Debug\netcoreapp3.1\DATN.Infrastructure.csproj.CoreCompileInputs.cache
+E:\DATN\DATN.Infrastructure\obj\Debug\netcoreapp3.1\DATN.Infrastructure.dll
+E:\DATN\DATN.Infrastructure\obj\Debug\netcoreapp3.1\DATN.Infrastructure.pdb
