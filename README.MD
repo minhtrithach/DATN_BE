@@ -11,8 +11,8 @@
 
 
 
-> Postgre hosting info
-Password  nPNk-4ZwWFwJ3sIiZTYj981pW-Ijw0w3
+## Postgre hosting info
+
 | Key         | Value                                   |
 | ----------- | --------------------------------------- |
 | server      | arjuna.db.elephantsql.com               |
