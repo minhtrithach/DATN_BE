@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj": {}
+    "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj": {}
   },
   "projects": {
-    "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj": {
+    "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj",
         "projectName": "DATN.DAL",
-        "projectPath": "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj",
-        "packagesPath": "C:\\Users\\PAT SON\\.nuget\\packages\\",
-        "outputPath": "E:\\DATN\\DATN.DAL\\obj\\",
+        "projectPath": "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj",
+        "packagesPath": "C:\\Users\\DanVo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\PAT SON\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\DanVo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -33,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
-                "projectPath": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj"
+              "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj"
               }
             }
           }
@@ -77,23 +72,18 @@
         }
       }
     },
-    "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
+    "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
         "projectName": "DATN.Infrastructure",
-        "projectPath": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\PAT SON\\.nuget\\packages\\",
-        "outputPath": "E:\\DATN\\DATN.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DanVo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanVo\\VNU-HCMUS\\pmtu Home - LuanVan\\2020-2021\\TimKiemViecLam\\05_User\\Dan\\DATN_BE\\DATN.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\PAT SON\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\DanVo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
