@@ -6605,11 +6605,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DATN\\DATN_BE\\BackEnd\\DATN\\DATN.DAL\\DATN.DAL.csproj",
+      "projectUniqueName": "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj",
       "projectName": "DATN.DAL",
-      "projectPath": "E:\\DATN\\DATN_BE\\BackEnd\\DATN\\DATN.DAL\\DATN.DAL.csproj",
+      "projectPath": "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj",
       "packagesPath": "C:\\Users\\PAT SON\\.nuget\\packages\\",
-      "outputPath": "E:\\DATN\\DATN_BE\\BackEnd\\DATN\\DATN.DAL\\obj\\",
+      "outputPath": "E:\\DATN\\DATN.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6631,8 +6631,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\DATN\\DATN_BE\\BackEnd\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
-              "projectPath": "E:\\DATN\\DATN_BE\\BackEnd\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj"
+            "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
+              "projectPath": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj"
             }
           }
         }
