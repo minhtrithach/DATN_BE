@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OauxianH6nY5RIdR4mnpmU1WGa7+n9irh9wBD0ycts5BaIhVs0r+V2se4mPr79CEfizWHJPZeGoS4cufQLJ7bQ==",
+  "dgSpecHash": "aICi3Jcstdss34P5RafZrf0W5JPXsEbvU6ZU493gimUFfbLtRXXFOUP455mMrYEWVomAMmm5s0Fue6DeFxEOfg==",
   "success": true,
-  "projectFilePath": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
+  "projectFilePath": "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PAT SON\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\PAT SON\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

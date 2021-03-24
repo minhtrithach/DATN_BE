@@ -1,0 +1,11 @@
+E:\DATN_BE\DATN.Infrastructure\bin\Debug\net5.0\DATN.Infrastructure.deps.json
+E:\DATN_BE\DATN.Infrastructure\bin\Debug\net5.0\DATN.Infrastructure.dll
+E:\DATN_BE\DATN.Infrastructure\bin\Debug\net5.0\ref\DATN.Infrastructure.dll
+E:\DATN_BE\DATN.Infrastructure\bin\Debug\net5.0\DATN.Infrastructure.pdb
+E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\DATN.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\DATN.Infrastructure.AssemblyInfoInputs.cache
+E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\DATN.Infrastructure.AssemblyInfo.cs
+E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\DATN.Infrastructure.csproj.CoreCompileInputs.cache
+E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\DATN.Infrastructure.dll
+E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\ref\DATN.Infrastructure.dll
+E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\DATN.Infrastructure.pdb

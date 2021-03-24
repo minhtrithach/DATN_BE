@@ -11,6 +11,13 @@ namespace DATN.DAL.Context
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {
         }
-        public DbSet<User> Users { get; set; }
+       
+        public DbSet<Job> job { get; set; }
+        public DbSet<DoanhNghiep> doanh_nghiep { get; set; }
+
+
+       
+
+       
     }
 }

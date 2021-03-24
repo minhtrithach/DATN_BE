@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DATN\\DATN.API\\DATN.API.csproj": {}
+    "E:\\DATN_BE\\DATN.API\\DATN.API.csproj": {}
   },
   "projects": {
-    "E:\\DATN\\DATN.API\\DATN.API.csproj": {
+    "E:\\DATN_BE\\DATN.API\\DATN.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DATN\\DATN.API\\DATN.API.csproj",
+        "projectUniqueName": "E:\\DATN_BE\\DATN.API\\DATN.API.csproj",
         "projectName": "DATN.API",
-        "projectPath": "E:\\DATN\\DATN.API\\DATN.API.csproj",
+        "projectPath": "E:\\DATN_BE\\DATN.API\\DATN.API.csproj",
         "packagesPath": "C:\\Users\\PAT SON\\.nuget\\packages\\",
-        "outputPath": "E:\\DATN\\DATN.API\\obj\\",
+        "outputPath": "E:\\DATN_BE\\DATN.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -33,11 +33,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj": {
-                "projectPath": "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj"
+              "E:\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj": {
+                "projectPath": "E:\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj"
               },
-              "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
-                "projectPath": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj"
+              "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
+                "projectPath": "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj"
               }
             }
           }
@@ -63,6 +63,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.0, )"
             },
@@ -99,14 +103,14 @@
         }
       }
     },
-    "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj": {
+    "E:\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj",
+        "projectUniqueName": "E:\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj",
         "projectName": "DATN.DAL",
-        "projectPath": "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj",
+        "projectPath": "E:\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj",
         "packagesPath": "C:\\Users\\PAT SON\\.nuget\\packages\\",
-        "outputPath": "E:\\DATN\\DATN.DAL\\obj\\",
+        "outputPath": "E:\\DATN_BE\\DATN.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -118,18 +122,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
-                "projectPath": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj"
+              "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
+                "projectPath": "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj"
               }
             }
           }
@@ -141,10 +145,26 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.0, )"
             },
@@ -172,14 +192,14 @@
         }
       }
     },
-    "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
+    "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
+        "projectUniqueName": "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
         "projectName": "DATN.Infrastructure",
-        "projectPath": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
+        "projectPath": "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\PAT SON\\.nuget\\packages\\",
-        "outputPath": "E:\\DATN\\DATN.Infrastructure\\obj\\",
+        "outputPath": "E:\\DATN_BE\\DATN.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -191,15 +211,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -210,8 +230,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",

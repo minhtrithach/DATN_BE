@@ -17,6 +17,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using DATN.API.Settings;
 using System.Text;
+using DATN.DAL.Services;
+using DATN.DAL.Repository;
 
 namespace DATN.API
 {
@@ -33,10 +35,25 @@ namespace DATN.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //"AppConn": "Server=arjuna.db.elephantsql.com;Database=ppcoymqc;User ID=ppcoymqc;Password=nPNk-4ZwWFwJ3sIiZTYj981pW-Ijw0w3;Port=5432;"
             services.AddControllers();
-            services.AddEntityFrameworkNpgsql().AddDbContext<DatabaseContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("AppConn")));
+            //services.AddDbContext<DatabaseContext>(opt =>
+            //{
+            //    opt.UseNpgsql(Configuration.GetConnectionString("AppConn"));
+            //});
+            services.AddEntityFrameworkNpgsql().AddDbContext<DatabaseContext>(opt =>
+            opt.UseNpgsql(Configuration.GetConnectionString("AppConn")));
+
+            services.AddMvc().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.IgnoreNullValues = true;
+            });
 
             // Khai báo các service và các Repository đc dùng
+            services.AddScoped<JobService, JobService>();
+            services.AddScoped<JobRepository, JobRepository>();
+
+            services.AddScoped<DoanhNghiepRepository, DoanhNghiepRepository>();
 
             ////configure strongly typed settings object
             var authSettingsSection = Configuration.GetSection("AuthSettings");

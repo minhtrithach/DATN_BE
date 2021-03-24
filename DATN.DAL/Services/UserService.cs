@@ -12,10 +12,6 @@ namespace DATN.DAL.Services
         public UserService(DatabaseContext context) : base(context)
         {
         }
-        public User Get (int id)
-        {
-            return context.Users.FirstOrDefault(ww => ww.Id == id);
-
-        }
+        
     }
 }

@@ -8,16 +8,17 @@ namespace DATN.DAL.Models
 {
     public class Job
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
-        public int Ma_Job   { get; set; }
-        public string Ten_Job { get; set; }
-        public float  Luong_Min { get; set; }
-        public float Luong_Max { get; set; }
-        public string Mo_ta { get; set; }
-        public string Li_do { get; set; }
-        public DateTime Ngay_Start { get; set; }
-        public DateTime Ngay_End { get; set; }
-        public string Ghi_Chu { get; set; }
-    }
+        [Key]
+        public int ma_cong_viec { get; set; }
+        public string ten_cong_viec { get; set; }
+        public double luong_toi_thieu { get; set; }
+        public double luong_toi_da { get; set; }
+        public string mo_ta_cong_viec { get; set; }
+        public string don_vi_tien_te { get; set; }
+        [Required]
+        public int ma_doanh_nghiep { get; set; }
+        public DateTime ngay_bat_dau { get; set; }
+        public DateTime ngay_ket_thuc { get; set; }
+        
+     }
 }

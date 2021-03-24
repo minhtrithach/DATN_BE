@@ -8,12 +8,12 @@ namespace DATN.DAL.Models
 {
     public class DoanhNghiep
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
 
-        public int Ma_DN { get; set; }
-        public string Ten_DN { get; set; }
-        public string Mo_ta { get; set; }
-        public string Email { get; set; }
-        public string Sdt { get; set; }
+        public int ma_doanh_nghiep { get; set; }
+        public string ten_doanh_nghiep { get; set; }
+        public string mo_ta { get; set; }
+        public string email { get; set; }
+        public string sdt { get; set; }
     }
 }
