@@ -1,10 +1,12 @@
 ﻿using DATN.DAL.Context;
 using DATN.Infrastructure.Responses;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace DATN.DAL.Repository
 {
@@ -16,26 +18,26 @@ namespace DATN.DAL.Repository
             this.context = context;
         }
        
-        public T Get(Expression<Func<T, bool>> expression)
+        public async Task<T> Get(Expression<Func<T, bool>> expression)
         {
 
-            return context.Set<T>().FirstOrDefault(expression);
+            return await context.Set<T>().FirstOrDefaultAsync(expression);
 
         }
 
-        public ListResponse<T> GetList(int? pageIndex, int? pageSize, Expression<Func<T, bool>> expression)
+        public  ListResponse<T> GetList(int? pageIndex, int? pageSize, Expression<Func<T, bool>> expression)
         {
-            var count = context.Set<T>().Count(expression);
+            int count = context.Set<T>().Count(expression);
             List<T> Data;
             if (pageIndex.HasValue && pageSize.HasValue)
             {
-                Data = context.Set<T>().Where(expression).Skip(pageIndex.Value * pageSize.Value).Take(pageSize.Value).ToList();
+                Data =  context.Set<T>().Where(expression).Skip(pageIndex.Value * pageSize.Value).Take(pageSize.Value).ToList();
             }
             else
             {
                 Data = context.Set<T>().Where(expression).ToList();
             }
-            return new ListResponse<T> { Data = Data, PageIndex = pageIndex, PageSize = pageSize, TotalRecord = count };
+            return new  ListResponse<T> { Data = Data, PageIndex = pageIndex, PageSize = pageSize, TotalRecord = count };
         }
 
         //public ListView<T> GetList(int? pageIndex, int? pageSize, Expression<Func<T, bool>> expression)
@@ -86,11 +88,17 @@ namespace DATN.DAL.Repository
 
         //}
 
-        //public void Delete(T entity)
-        //{
-        //    context.Set<T>().Remove(entity);
-        //    context.SaveChanges();
-        //}
+        public Boolean Delete(T entity)
+        {
+
+            if (context.Set<T>().Remove(entity) != null)
+            {
+                context.SaveChanges();
+                return true;
+            }
+            else return false;
+
+        }
 
 
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DATN.API.Controllers
 {
-    [Route("api/levenshtein")]
+    [Route("api/levenshteins")]
     [ApiController]
     public class LevenshteinController : Controller
     {
