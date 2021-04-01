@@ -12,9 +12,10 @@ namespace DATN.DAL.Services
         public JobService(DatabaseContext context) : base(context)
         {
         }
-        public Job Get (string id)
+        public Job Get (string q)
         {
-            return context.job.FirstOrDefault(w => w.ma_cong_viec == Int32.Parse(id));
+            return context.job.FirstOrDefault(w => w.ten_cong_viec.Contains(q));
+            //return n;
         }
     }
 }

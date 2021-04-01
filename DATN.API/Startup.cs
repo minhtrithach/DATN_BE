@@ -19,6 +19,7 @@ using DATN.API.Settings;
 using System.Text;
 using DATN.DAL.Services;
 using DATN.DAL.Repository;
+using DATN.API.Services;
 
 namespace DATN.API
 {
@@ -54,6 +55,8 @@ namespace DATN.API
             services.AddScoped<JobRepository, JobRepository>();
 
             services.AddScoped<DoanhNghiepRepository, DoanhNghiepRepository>();
+
+            services.AddScoped<LevenshteinService, LevenshteinService>();
 
             ////configure strongly typed settings object
             var authSettingsSection = Configuration.GetSection("AuthSettings");

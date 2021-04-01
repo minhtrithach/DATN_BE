@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DATN.API.Controllers
 {
-    [Route("api/company")]
+    [Route("api/companies")]
     public class DoanhNghiepController : Controller
     {
         private DoanhNghiepRepository doanhNghiepRepository;
@@ -19,11 +19,11 @@ namespace DATN.API.Controllers
             this.doanhNghiepRepository = doanhNghiepRepository;
         }
 
-        [HttpGet]
-        public DoanhNghiep Get()
-        {
-            return doanhNghiepRepository.Get(w => w.ma_doanh_nghiep==1);
+        //[HttpGet]
+        //public DoanhNghiep Get()
+        //{
+        //    return doanhNghiepRepository.Get(w => w.ma_doanh_nghiep==1);
 
-        }
+        //}
     }
 }
