@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {}
+    "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {}
   },
   "projects": {
-    "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
+    "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
+        "projectUniqueName": "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
         "projectName": "DATN.Infrastructure",
-        "projectPath": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
+        "projectPath": "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\PAT SON\\.nuget\\packages\\",
-        "outputPath": "E:\\DATN\\DATN.Infrastructure\\obj\\",
+        "outputPath": "E:\\DATN_BE\\DATN.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

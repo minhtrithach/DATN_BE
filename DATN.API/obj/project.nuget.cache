@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GSfRo/quHZ6tRSzof6hCdT9gTB0lBgxUsYQfD//DNkHCXqqXkb9AtSps5bS3Bo4zBScpywSAqIuG7TD8NaeOuw==",
+  "dgSpecHash": "U093HkevByv6n8TFFSRmeDNgfHzRupqf2UzyVluMdL0eKd6AS9n4fS39Y8aU5QBy3cl/cKfcf3OHHECLP1s5wg==",
   "success": true,
-  "projectFilePath": "E:\\DATN\\DATN.API\\DATN.API.csproj",
+  "projectFilePath": "E:\\DATN_BE\\DATN.API\\DATN.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PAT SON\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\PAT SON\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

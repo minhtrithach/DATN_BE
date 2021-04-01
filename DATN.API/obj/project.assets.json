@@ -7056,11 +7056,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DATN\\DATN.API\\DATN.API.csproj",
+      "projectUniqueName": "E:\\DATN_BE\\DATN.API\\DATN.API.csproj",
       "projectName": "DATN.API",
-      "projectPath": "E:\\DATN\\DATN.API\\DATN.API.csproj",
+      "projectPath": "E:\\DATN_BE\\DATN.API\\DATN.API.csproj",
       "packagesPath": "C:\\Users\\PAT SON\\.nuget\\packages\\",
-      "outputPath": "E:\\DATN\\DATN.API\\obj\\",
+      "outputPath": "E:\\DATN_BE\\DATN.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -7082,11 +7082,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj": {
-              "projectPath": "E:\\DATN\\DATN.DAL\\DATN.DAL.csproj"
+            "E:\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj": {
+              "projectPath": "E:\\DATN_BE\\DATN.DAL\\DATN.DAL.csproj"
             },
-            "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
-              "projectPath": "E:\\DATN\\DATN.Infrastructure\\DATN.Infrastructure.csproj"
+            "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj": {
+              "projectPath": "E:\\DATN_BE\\DATN.Infrastructure\\DATN.Infrastructure.csproj"
             }
           }
         }
