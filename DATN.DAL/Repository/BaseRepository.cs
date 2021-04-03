@@ -10,34 +10,35 @@ using System.Threading.Tasks;
 
 namespace DATN.DAL.Repository
 {
-    public class BaseRepository<T> where T: class
+    public class BaseRepository<T> where T : class
     {
-       protected DatabaseContext context { get; set; }
+        private const int PAGE_SIZE = 10;
+        protected DatabaseContext context { get; set; }
         public BaseRepository(DatabaseContext context)
         {
             this.context = context;
         }
-       
+
         public async Task<T> Get(Expression<Func<T, bool>> expression)
         {
 
             return await context.Set<T>().FirstOrDefaultAsync(expression);
 
         }
-
-        public  ListResponse<T> GetList(int? pageIndex, int? pageSize, Expression<Func<T, bool>> expression)
+        async public Task<ListResponse<T>> GetList(string searchKey, int? pageIndex, Expression<Func<T, bool>> expression)
         {
+
             int count = context.Set<T>().Count(expression);
             List<T> Data;
-            if (pageIndex.HasValue && pageSize.HasValue)
+            if (pageIndex.HasValue)
             {
-                Data =  context.Set<T>().Where(expression).Skip(pageIndex.Value * pageSize.Value).Take(pageSize.Value).ToList();
+                Data = await context.Set<T>().Where(expression).Skip(pageIndex.Value * PAGE_SIZE).Take(PAGE_SIZE).ToListAsync();
             }
             else
             {
-                Data = context.Set<T>().Where(expression).ToList();
+                Data = await context.Set<T>().Where(expression).ToListAsync();
             }
-            return new  ListResponse<T> { Data = Data, PageIndex = pageIndex, PageSize = pageSize, TotalRecord = count };
+            return new ListResponse<T> { Data = Data, PageIndex = pageIndex, PageSize = PAGE_SIZE, TotalRecord = count };
         }
 
         //public ListView<T> GetList(int? pageIndex, int? pageSize, Expression<Func<T, bool>> expression)
