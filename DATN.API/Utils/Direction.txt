@@ -1,4 +1,7 @@
+﻿lập trình viên
 developer
+backend
+back-end
 Customer Demand Planning
 Sales Management
 Sales
@@ -73,8 +76,8 @@ Local Management
 Course Evaluations
 Local Area Networks
 Intranet
-PHP (Scripting Language)
-Java (Programming Language)
+PHP 
+Java 
 Apple IOS
 Value Proposition
 Information Gathering
@@ -93,7 +96,7 @@ Production Process
 Unix
 Linux
 Production Systems
-SQL (Programming Language)
+SQL 
 Routing Protocols
 Switch (Electrical Components)
 Enterprise Application Software
@@ -111,8 +114,8 @@ Accounting
 Microsoft Office 365
 Microsoft SharePoint
 Microsoft Excel
-Objective-C (Programming Language)
-Swift (Programming Language)
+Objective-C 
+Swift 
 Apple IPad
 Apple IPhone
 Marketing Management
@@ -247,7 +250,7 @@ Network Time Protocols
 Microsoft Windows
 Apache Hadoop
 Microsoft Azure
-Python (Programming Language)
+Python 
 Amazon Web Services
 Bash (Scripting Language)
 Apache Spark
@@ -259,7 +262,7 @@ HVAC
 Modular Building
 Building Information Modeling
 Design Strategies
-C# (Programming Language)
+C# 
 Autodesk Revit
 Quality Control
 Self-Motivation
@@ -277,10 +280,10 @@ Test Strategy
 Regression Testing
 Windows Mail
 Trade Promotion Management
-C++ (Programming Language)
+C++ 
 Electronic Engineering
 Software Engineering
-C (Programming Language)
+C 
 Electronics
 Teaching
 Robotics
@@ -311,7 +314,7 @@ Merchandising
 Career Development
 Debugging
 Software Testing
-Ruby (Programming Language)
+Ruby 
 Style Guides
 Japanese Language
 Time Constraints
@@ -373,7 +376,7 @@ Coordinating
 Business Workflow Analysis
 Production Part Approval Process
 International Automotive Task Force
-Visual Basic .NET (Programming Language)
+Visual Basic .NET 
 .NET Framework
 Accounting Information Systems
 Organizational Strategy
@@ -578,7 +581,7 @@ Production Equipment
 Inventory Control Systems
 File Importing
 ASP.NET
-Visual Basic (Programming Language)
+Visual Basic 
 Material Requirements Planning
 Sales Records
 Marketing Operations
@@ -1196,7 +1199,7 @@ Gulp.js
 Architectural Patterns
 Test-Driven Development (TDD)
 Application Security
-Go (Programming Language)
+Go 
 Secure Coding
 Webpack
 Web Development
@@ -1364,7 +1367,7 @@ Business Case Analysis
 SAS (Software)
 SPSS (Statistical Software)
 Mathematical Optimization
-R (Programming Language)
+R 
 Streamlining
 Data Recording
 Welding Power Supply
@@ -1752,11 +1755,11 @@ Linux On Embedded Systems
 QNX (Software)
 Search Algorithms
 Reinforcement Learning
-Elixir (Programming Language)
+Elixir 
 Erlang
 Parallel Processing
 Health Risks
-Haskell (Programming Language)
+Haskell 
 Mental Health
 Execute Plans
 Zabbix
@@ -1825,7 +1828,7 @@ Behavior-Driven Development
 Agile Modeling
 Docker Engine
 PHP Development
-Ajax (Programming Language)
+Ajax 
 Solid Principles
 Endpoint Security
 LAMP (Software Bundle)
@@ -2010,8 +2013,8 @@ Database Cluster
 Build Automation
 Recommender Systems
 Booking (Resource Planning Software)
-Perl (Programming Language)
-Scala (Programming Language)
+Perl 
+Scala 
 Google Shopping
 Failure Mode And Effects Analysis
 Tax Accounting

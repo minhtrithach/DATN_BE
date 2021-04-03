@@ -16,18 +16,38 @@ namespace DATN.API.Controllers
     {
         private LevenshteinService levenshteinService;
         private JobService jobService;
+        private SkillService skillService;
 
-        public SuggesstionController(LevenshteinService levenshteinService, JobService jobService)
+        public SuggesstionController(LevenshteinService levenshteinService, JobService jobService, SkillService skillService)
         {
             this.levenshteinService = levenshteinService;
             this.jobService = jobService;
+            this.skillService = skillService;
         }
 
 
+
         //GET: api/v1/suggesstion/p
-        public List<string> Get_word_related(string p)
+        public List<string> GetSuggesstionWord(string p)
         {
-            return jobService.GetSuggesstion(p);
+            var result = new List<string>();
+            if (jobService.GetSuggesstion_JobTiltle(p).Count() != 0)
+            {
+                result = jobService.GetSuggesstion_JobTiltle(p);
+            }
+            else
+            {
+                if (skillService.GetSuggesstion_Skill(p).Count() != 0)
+                {
+                    result = skillService.GetSuggesstion_Skill(p);
+                }
+                else
+                {
+                    result = levenshteinService.calcDictDistance(p, 1);
+                }
+            }
+
+            return result;
            // return levenshteinService.calcDictDistance(p, 1);
         }
 

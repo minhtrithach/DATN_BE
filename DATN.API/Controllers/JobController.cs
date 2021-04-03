@@ -11,6 +11,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using DATN.API.Services;
+using System.Linq.Expressions;
 
 namespace DATN.API.Controllers
 {
@@ -20,7 +22,6 @@ namespace DATN.API.Controllers
     {
         private JobRepository jobRepository;
         private JobService jobService;
-
         public JobController(JobRepository jobRepository, JobService jobService)
         {
             this.jobRepository = jobRepository;
@@ -70,9 +71,9 @@ namespace DATN.API.Controllers
             }
         }
 
-        //GET: api/v1/jobs/q
-
-        public async Task<IActionResult> GetAll([FromQuery] PageCommand pageCommand, [FromHeader] string q)
+        //GET: api/jobs/q
+        [HttpPost]
+        async public Task<IActionResult> SearchByKeyWord([FromBody] string searchKey, int pageIndex)
         {
             try
             {
@@ -81,9 +82,13 @@ namespace DATN.API.Controllers
                     return BadRequest(ModelState);
                 }
 
-                ListResponse<Job> jobs = await this.jobRepository.GetList(pageCommand.PageIndex, pageCommand.PageSize, m => m.ten_cong_viec.Contains(q));
+                Expression<Func<Job,bool>> jobInTitleExp = j=>j.ten_cong_viec.Contains(searchKey);
+                // Expression<Func<DanhSachJob_Skill,Skill,Job,bool>> jobInSkillExp = j=>j.ten_cong_viec.Contains(searchKey);
+                Expression<Func<Job,bool>> jobRelatedExp = j=>j.ten_cong_viec.Contains(searchKey);
 
-                if (jobs == null)
+                ListResponse<Job> jobsInTitle = await this.jobRepository.GetList(searchKey,pageIndex,jobInTitleExp);
+                
+                if (jobsInTitle == null)
                 {
                     return NotFound(new
                     {
@@ -94,8 +99,8 @@ namespace DATN.API.Controllers
                 return Ok(new
                 {
                     success = true,
-                    data = jobs
-                });
+                    data = jobsInTitle
+                }); 
             }
             catch
             {

@@ -15,9 +15,11 @@ namespace DATN.DAL.Context
         public DbSet<Job> job { get; set; }
         public DbSet<DoanhNghiep> doanh_nghiep { get; set; }
 
+        public DbSet<Skill> skill { get; set; }
 
-       
 
-       
+
+
+
     }
 }

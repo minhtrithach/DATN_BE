@@ -58,6 +58,8 @@ namespace DATN.API
 
             services.AddScoped<LevenshteinService, LevenshteinService>();
 
+            services.AddScoped<SkillService, SkillService>();
+
             ////configure strongly typed settings object
             var authSettingsSection = Configuration.GetSection("AuthSettings");
             services.Configure<AuthSettings>(authSettingsSection);

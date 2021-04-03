@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
 using System.Text;
-using System.Collections.Generic;
 using Microsoft.Extensions.Configuration;
 using DATN.API.Settings;
 
@@ -79,23 +78,18 @@ namespace DATN.API.Services
                 {
                     int wordDistance = levenshteinDistanceDP(word, lines[i].Trim());
                     if (wordDistance >= 10) { wordDistance = 9; }
-                    dictWordDist.Add(wordDistance.ToString() + "-" + lines[i].Trim());
+                    dictWordDist.Add(wordDistance.ToString() + ":" + lines[i].Trim());
                     wordIdx++;
                 }
 
-                //List<string> wordDetails = new List<string>();
                 string[] wordDetails;
                 string currWordDist = "";
                 dictWordDist.Sort();
                 for (int i=0; i< numWords; i++)
                 {
                     currWordDist = dictWordDist[i];
-                    //wordDetails = currWordDist.Split('-');
-                    wordDetails = currWordDist.Split('-');
-                    for (int tm=1;tm<wordDetails.Length;tm++)
-                    {
-                        closestWords.Add(wordDetails[tm]);
-                    }
+                    wordDetails = currWordDist.Split(new string[] { ":" }, StringSplitOptions.None);
+                    closestWords.Add(wordDetails[1]);
                 }               
 
             }

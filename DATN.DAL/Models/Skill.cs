@@ -8,10 +8,9 @@ namespace DATN.DAL.Models
 {
     public class Skill
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
-        public int Ma_Skill { get; set; }
-        public string Ten_Skill { get; set; }
-        public string Ghi_Chu { get; set; }
+        [Key]
+        public int ma_skill { get; set; }
+        public string ten_skill { get; set; }
+        public string ghi_chu { get; set; }
     }
 }
