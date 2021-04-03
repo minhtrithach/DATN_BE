@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace DATN.API.Controllers
 {
-    [Route("api/jobs")]
+    [Route("api/v1/jobs")]
     [ApiController]
     public class JobController : Controller
     {
@@ -27,17 +27,17 @@ namespace DATN.API.Controllers
             this.jobService = jobService;
         }
 
-        // GET: api/jobs/5
+        // GET: api/v1/jobs/5
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            if(id.ToString() == null)
+            if (id.ToString() == null)
             {
                 return BadRequest(new
                 {
                     success = false,
                     error = "id is not null"
-                }) ;
+                });
             }
             try
             {
@@ -45,7 +45,7 @@ namespace DATN.API.Controllers
                 {
                     return BadRequest(ModelState);
                 }
-                Job job = await jobRepository.Get(w=>w.ma_cong_viec == id);
+                Job job = await jobRepository.Get(w => w.ma_cong_viec == id);
                 if (job == null)
                 {
                     return NotFound(new
@@ -70,9 +70,9 @@ namespace DATN.API.Controllers
             }
         }
 
-        //GET: api/jobs/q
+        //GET: api/v1/jobs/q
 
-        public IActionResult GetAll([FromQuery] PageCommand pageCommand,[FromHeader] string q)
+        public async Task<IActionResult> GetAll([FromQuery] PageCommand pageCommand, [FromHeader] string q)
         {
             try
             {
@@ -81,8 +81,8 @@ namespace DATN.API.Controllers
                     return BadRequest(ModelState);
                 }
 
-                ListResponse<Job> jobs = this.jobRepository.GetList(pageCommand.PageIndex, pageCommand.PageSize, m => m.ten_cong_viec.Contains(q));
-                
+                ListResponse<Job> jobs = await this.jobRepository.GetList(pageCommand.PageIndex, pageCommand.PageSize, m => m.ten_cong_viec.Contains(q));
+
                 if (jobs == null)
                 {
                     return NotFound(new
@@ -95,7 +95,7 @@ namespace DATN.API.Controllers
                 {
                     success = true,
                     data = jobs
-                }); 
+                });
             }
             catch
             {
@@ -106,8 +106,5 @@ namespace DATN.API.Controllers
                 });
             }
         }
-
-
     }
-    
 }

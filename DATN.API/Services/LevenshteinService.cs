@@ -5,13 +5,15 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Text;
 using System.Collections.Generic;
+using Microsoft.Extensions.Configuration;
+using DATN.API.Settings;
 
 namespace DATN.API.Services
 {
     public class LevenshteinService
     {
-        string filePath = @"E:\DATN_BE\1-1000.txt";
-
+        string filePath = @".\Utils\Direction.txt";
+        
         public int levenshteinDistanceDP(string token1, string token2)
         {
             int[,] distances = new int[(token1.Length + 1), (token2.Length + 1)];

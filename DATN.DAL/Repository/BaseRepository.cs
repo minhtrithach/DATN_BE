@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace DATN.DAL.Repository
 {
-    public class BaseRepository<T> where T: class
+    public class BaseRepository<T> where T : class
     {
-       protected DatabaseContext context { get; set; }
+        protected DatabaseContext context { get; set; }
         public BaseRepository(DatabaseContext context)
         {
             this.context = context;
         }
-       
+
         public async Task<T> Get(Expression<Func<T, bool>> expression)
         {
 
@@ -25,19 +25,19 @@ namespace DATN.DAL.Repository
 
         }
 
-        public  ListResponse<T> GetList(int? pageIndex, int? pageSize, Expression<Func<T, bool>> expression)
+        public async Task<ListResponse<T>> GetList(int? pageIndex, int? pageSize, Expression<Func<T, bool>> expression)
         {
             int count = context.Set<T>().Count(expression);
             List<T> Data;
             if (pageIndex.HasValue && pageSize.HasValue)
             {
-                Data =  context.Set<T>().Where(expression).Skip(pageIndex.Value * pageSize.Value).Take(pageSize.Value).ToList();
+                Data = await context.Set<T>().Where(expression).Skip(pageIndex.Value * pageSize.Value).Take(pageSize.Value).ToListAsync();
             }
             else
             {
-                Data = context.Set<T>().Where(expression).ToList();
+                Data = await context.Set<T>().Where(expression).ToListAsync();
             }
-            return new  ListResponse<T> { Data = Data, PageIndex = pageIndex, PageSize = pageSize, TotalRecord = count };
+            return new ListResponse<T> { Data = Data, PageIndex = pageIndex, PageSize = pageSize, TotalRecord = count };
         }
 
         //public ListView<T> GetList(int? pageIndex, int? pageSize, Expression<Func<T, bool>> expression)
@@ -81,22 +81,25 @@ namespace DATN.DAL.Repository
         //    context.SaveChanges();
         //}
 
-        //public void Update(T entity)
-        //{
-        //    context.Set<T>().Update(entity);
-        //    context.SaveChanges();
-
-        //}
-
-        public Boolean Delete(T entity)
+        public async Task<T> Update(T entity)
         {
+            context.Set<T>().Update(entity);
+            await context.SaveChangesAsync();
+            return entity;
+        }
 
-            if (context.Set<T>().Remove(entity) != null)
-            {
-                context.SaveChanges();
-                return true;
-            }
-            else return false;
+        public async Task<Boolean> Create(T entity)
+        {
+            context.Set<T>().Add(entity);
+            await context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<Boolean> Delete(T entity)
+        {
+            context.Set<T>().Remove(entity);
+            await context.SaveChangesAsync();
+            return true;
 
         }
 

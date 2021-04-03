@@ -19,11 +19,51 @@ namespace DATN.API.Controllers
             this.doanhNghiepRepository = doanhNghiepRepository;
         }
 
-        //[HttpGet]
-        //public DoanhNghiep Get()
-        //{
-        //    return doanhNghiepRepository.Get(w => w.ma_doanh_nghiep==1);
+        // GET: api/companies/5
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            if (id.ToString() == null)
+            {
+                return BadRequest(new
+                {
+                    success = false,
+                    error = "id is not null"
+                });
+            }
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                DoanhNghiep doanhNghiep = await doanhNghiepRepository.Get(w => w.ma_doanh_nghiep == id);
+                if (doanhNghiep == null)
+                {
+                    return NotFound(new
+                    {
+                        success = false,
+                        error = "Job not found"
+                    });
+                }
+                return Ok(new
+                {
+                    success = true,
+                    data = doanhNghiep
+                });
+            }
+            catch
+            {
+                return NotFound(new
+                {
+                    success = false,
+                    error = "Job not found"
+                });
+            }
+        }
 
-        //}
+
+
+
     }
 }

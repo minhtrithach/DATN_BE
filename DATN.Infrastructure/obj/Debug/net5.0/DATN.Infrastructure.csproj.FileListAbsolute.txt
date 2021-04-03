@@ -9,3 +9,4 @@ E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\DATN.Infrastructure.csproj.CoreC
 E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\DATN.Infrastructure.dll
 E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\ref\DATN.Infrastructure.dll
 E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\DATN.Infrastructure.pdb
+E:\DATN_BE\DATN.Infrastructure\obj\Debug\net5.0\DATN.Infrastructure.csprojAssemblyReference.cache

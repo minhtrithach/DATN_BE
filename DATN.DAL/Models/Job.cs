@@ -17,8 +17,8 @@ namespace DATN.DAL.Models
         public string don_vi_tien_te { get; set; }
         [Required]
         public int ma_doanh_nghiep { get; set; }
-        public DateTime ngay_bat_dau { get; set; }
-        public DateTime ngay_ket_thuc { get; set; }
+        public DateTime? ngay_bat_dau { get; set; }
+        public DateTime? ngay_ket_thuc { get; set; }
         
      }
 }
