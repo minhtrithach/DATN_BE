@@ -21,5 +21,5 @@
 | password    | nPNk-4ZwWFwJ3sIiZTYj981pW-Ijw0w3        |
 
 ## Document API Postman
-[https://localhost:44367/api/v1/jobs/1](url)
+[Open](https://www.getpostman.com/collections/b1beb7f042a3bcf91ec2)
 
