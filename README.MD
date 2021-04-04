@@ -21,5 +21,5 @@
 | password    | nPNk-4ZwWFwJ3sIiZTYj981pW-Ijw0w3        |
 
 ## Document API Postman
-[Open](https://www.getpostman.com/collections/b1beb7f042a3bcf91ec2)
+[Open Postman](https://documenter.getpostman.com/view/12951610/TzCQa6Hf)
 
